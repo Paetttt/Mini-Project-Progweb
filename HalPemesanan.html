@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Tiket Konser</title>
+    <link rel="stylesheet" href="pemesanan.css">
+</head>
+<body>
+    <header>
+        <h1>Pemesanan Tiket Konser</h1>
+    </header>
+    <div class="container">
+        <h2>Info Tiket Konser</h2>
+        <p>Di sini Anda dapat memesan tiket konser. Silakan lengkapi formulir di bawah ini untuk memesan tiket.</p>
+        <div class="ticket-info">
+            <h3>Detail Tiket:</h3>
+            <p>Nama Acara: KrzyBrazy</p>
+            <p>Tanggal: 25 Agustus 2023</p>
+            <p>Tempat: Stadion Mandala Krida</p>
+            <p>Jenis Tiket: VIP, VVIP, Gold, Bronze, Reguler</p>
+        </div>
+        <h2>Form Pemesanan Tiket</h2>
+        <form>
+            <input type="text" name="nama" placeholder="Nama" required>
+            <input type="tel" name="no_hp" placeholder="Nomor Telepon" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <select name="jenis_tiket" required>
+                <option value="" disabled selected>Pilih Jenis Tiket</option>
+                <option value="VIP">VIP</option>
+                <option value="VVIP">VVIP</option>
+                <option value="Gold">Gold</option>
+                <option value="Bronze">Bronze</option>
+                <option value="Reguler">Reguler</option>
+            </select>
+            <input type="submit" value="Back" a href="">
+            <input type="submit" value="Pesan Tiket">
+        </form>
+
+    </div>
+<footer>
+        <div class="container">
+            <div class="footer-info">
+                <h2>HyperTIX</h2>
+                <p>&copy; 2024 HyperTIX. All rights reserved.</p>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
