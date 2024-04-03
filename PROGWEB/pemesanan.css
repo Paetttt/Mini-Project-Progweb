@@ -1,85 +1,182 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    background-color: #222831;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #222831;
 }
 header {
-    background-color: #76ABAE;
-    color: #fff;
-    border-top: 2px solid #ffffff; /* Tambahkan garis atas pada footer */
+  background-color: #76abae;
+  padding: 20px 0;
+  border-bottom: 2px solid #ffffff; /* Tambahkan garis bawah pada header */
+}
 
-    padding: 10px 0;
-    text-align: center;
+@font-face {
+  font-family: "Azonix";
+  src: url("Font/Azonix.ttf") format("truetype"); /* Sesuaikan path dengan lokasi font di proyek Anda */
+}
+
+.hyper-tix {
+  font-family: "Azonix", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 450px;
+  display: inline-block;
+  overflow: hidden;
+  color: #000000; /* Warna utama TikTok */
+  transition: color 0.3s;
+}
+
+.hyper-tix::before,
+.hyper-tix::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hyper-tix::before {
+  left: 2px;
+  text-shadow: -2px 0 #ff0000; /* Warna sekunder TikTok */
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitch-anim-1 2s infinite linear alternate-reverse;
+}
+
+.hyper-tix::after {
+  left: -2px;
+  text-shadow: -2px 0 #00c7ff; /* Warna sekunder TikTok */
+  clip: rect(24px, 450px, 36px, 0);
+  animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+  0%,
+  100% {
+    clip: rect(44px, 9999px, 56px, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    clip: rect(25px, 9999px, 62px, 0);
+  }
+}
+
+@keyframes glitch-anim-2 {
+  0%,
+  100% {
+    clip: rect(24px, 9999px, 36px, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    clip: rect(14px, 9999px, 74px, 0);
+  }
+}
+
+.hyper-tix:hover {
+  color: #ffffff; /* Warna hitam untuk efek glitch saat hover */
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #222831;
+  transition: 0.2s;
 }
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-    
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
 }
-h1{
-    font-size: 36px;
-    letter-spacing: 5px;
-}
-h1:hover{
-    color: #31363F;
-    text-shadow:4px 4px 1px #fff ;
-    transition:  0.2s;
 
-}
 h2 {
-    color: #76ABAE;
+  color: #76abae;
 }
 form {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-input[type="text"], input[type="tel"], input[type="email"], select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 input[type="submit"] {
-    background-color: #76ABAE;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: #76abae;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 input[type="submit"]:hover {
-    background-color: #555;
+  background-color: #555;
 }
-.seating-plan {
-    text-align: center;
+button {
+  background-color: #76abae;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
 }
+button:hover {
+  background-color: #555;
+}
+.back {
+  float: right;
+}
+
 footer {
-    background-color: #76ABAE;
-    color: #EEEEEE;
-    padding: 20px 0;
-    text-align: center;
-    border-top: 2px solid #ffffff; /* Tambahkan garis atas pada footer */
-  }
-  
-  .footer-info,
-  .footer-nav {
-    margin-bottom: 20px;
-  }
-  
-  .footer-nav ul {
-    padding: 0;
-  }
-  
-  .footer-nav li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .footer-nav a {
-    color: #EEEEEE; /* Warna teks pada menu navigasi footer */
-    text-decoration: none;
-  }
+  background-color: #76abae;
+  color: #eeeeee;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 2px solid #ffffff; /* Tambahkan garis atas pada footer */
+}
+
+.footer-info,
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-nav ul {
+  padding: 0;
+}
+
+.footer-nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer-nav a {
+  color: #eeeeee; /* Warna teks pada menu navigasi footer */
+  text-decoration: none;
+}

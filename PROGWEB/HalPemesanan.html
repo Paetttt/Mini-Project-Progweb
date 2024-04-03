@@ -1,57 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pemesanan Tiket Konser</title>
-    <link rel="stylesheet" href="pemesanan.css">
-</head>
-<body>
+    <link rel="stylesheet" href="pemesanan.css" />
+  </head>
+  <body>
     <header>
-        <h1>Pemesanan Tiket Konser</h1>
+      <div class="container">
+        <div class="header-content">
+          <h1 class="hyper-tix">HyperTIX</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="HalamanUtama.html">HOME</a></li>
+            <li><a href="HalPemesanan.html">PEMESANAN</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <div class="container">
-        <h2>Info Tiket Konser</h2>
-        <p>Di sini Anda dapat memesan tiket konser. Silakan lengkapi formulir di bawah ini untuk memesan tiket.</p>
-        <div class="ticket-info">
-            <h3>Detail Tiket:</h3>
-            <p>Nama Acara: KrzyBrazy</p>
-            <p>Tanggal: 25 Agustus 2023</p>
-            <p>Tempat: Stadion Mandala Krida</p>
-            <p>Jenis Tiket: VIP, VVIP, Gold, Bronze, Reguler</p>
-        </div>
-        <h2>Form Pemesanan Tiket</h2>
-        <form>
-            <input type="text" name="nama" placeholder="Nama" required>
-            <input type="tel" name="no_hp" placeholder="Nomor Telepon" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <select name="jenis_tiket" required>
-                <option value="" disabled selected>Pilih Jenis Tiket</option>
-                <option value="VIP">VIP</option>
-                <option value="VVIP">VVIP</option>
-                <option value="Gold">Gold</option>
-                <option value="Bronze">Bronze</option>
-                <option value="Reguler">Reguler</option>
-            </select>
-            <input type="submit" value="Back" a href="">
-            <input type="submit" value="Pesan Tiket">
-        </form>
 
+    <div class="container">
+      <img src="seatingplan.jpg" alt="Seating Plan" class="seating-plan" />
+      <h2>Info Tiket Konser</h2>
+      <p>
+        Di sini Anda dapat memesan tiket konser. Silakan lengkapi formulir di
+        bawah ini untuk memesan tiket.
+      </p>
+      <div class="ticket-info">
+        <h3>Detail Tiket:</h3>
+        <p>Nama Acara: XXX Tentation Moon Light</p>
+        <p>Tanggal: 11 Mei 2024</p>
+        <p>Tempat: Lapangan Gor Cendrawas Jayapura, PAPUA</p>
+        <p>
+          Jenis Tiket: FESTIVAL, CAT 1A, CAT 1B, CAT 2A, CAT 2B, CAT 3A, CAT
+          3B,CAT 3C
+        </p>
+      </div>
+      <h2>Form Pemesanan Tiket</h2>
+      <form>
+        <input type="text" name="nama" placeholder="Nama" required />
+        <input type="tel" name="no_hp" placeholder="Nomor Telepon" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="number"
+          name="jmltiket"
+          placeholder="Jumlah Tiket"
+          min="1"
+          max="20"
+          required
+        />
+        <select name="jenis_tiket" required>
+          <option value="" disabled selected>Pilih Jenis Tiket</option>
+          <option value="FESTIVAL">FESTIVAL</option>
+          <option value="CAT 1A">CAT 1A</option>
+          <option value="CAT 1B">CAT 1B</option>
+          <option value="CAT 2A">CAT 2A</option>
+          <option value="CAT 2B">CAT 2B</option>
+          <option value="CAT 2C">CAT 2C</option>
+          <option value="CAT 3A">CAT 3A</option>
+          <option value="CAT 3B">CAT 3B</option>
+          <option value="CAT 3C">CAT 3C</option>
+        </select>
+        <button
+          onclick="alert('Apakah anda yakin ingin memuatulang?')"
+          type="reset"
+          class="reset"
+        >
+          Reset
+        </button>
+        <input type="submit" value="Submit" formaction="berhasil.html" />
+        <button
+          onclick="alert('Anda Yakin Ingin Kembali ke Halaman Awal?')"
+          type="submit"
+          class="back"
+        >
+          <a href="HalamanUtama.html">Back</a>
+        </button>
+      </form>
     </div>
-<footer>
-        <div class="container">
-            <div class="footer-info">
-                <h2>HyperTIX</h2>
-                <p>&copy; 2024 HyperTIX. All rights reserved.</p>
-            </div>
-            <div class="footer-nav">
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+    <footer>
+      <div class="container">
+        <div class="footer-info">
+          <h2>HyperTIX</h2>
+          <p>&copy; 2024 HyperTIX. All rights reserved.</p>
         </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
