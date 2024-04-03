@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #222831;
+}
+header {
+    background-color: #76ABAE;
+    color: #fff;
+    border-top: 2px solid #ffffff; /* Tambahkan garis atas pada footer */
+
+    padding: 10px 0;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    
+}
+h1{
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+h1:hover{
+    color: #31363F;
+    text-shadow:4px 4px 1px #fff ;
+    transition:  0.2s;
+
+}
+h2 {
+    color: #76ABAE;
+}
+form {
+    margin-top: 20px;
+}
+input[type="text"], input[type="tel"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #76ABAE;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #555;
+}
+.seating-plan {
+    text-align: center;
+}
+footer {
+    background-color: #76ABAE;
+    color: #EEEEEE;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #ffffff; /* Tambahkan garis atas pada footer */
+  }
+  
+  .footer-info,
+  .footer-nav {
+    margin-bottom: 20px;
+  }
+  
+  .footer-nav ul {
+    padding: 0;
+  }
+  
+  .footer-nav li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .footer-nav a {
+    color: #EEEEEE; /* Warna teks pada menu navigasi footer */
+    text-decoration: none;
+  }
